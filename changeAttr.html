@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Attribute</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+    <h1 id="htag" class="text-primary">Change Attribute</h1>
+
+   <img id="myImg" src="https://m.media-amazon.com/images/I/61CPQhjQC4L._AC_UF1000,1000_QL80_.jpg" alt="" width="100px" height="100px">
+   <br><br>
+
+    <button onclick="change()">Change Attr</button>
+  
+
+    
+</body>
+<script>
+
+    function change(){
+
+        var myImg=document.getElementById('myImg');
+        myImg.src="https://m.media-amazon.com/images/I/71oFg6NmeLL.jpg";
+        myImg.width=200;
+        myImg.height=200;
+        
+        
+    }
+      
+</script>
+</html>
