@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Style Change</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+    <h1 id="h1tag">Bangladesh</h1>
+    <p class="para">lorem</p>
+    <h4 name="h4">h4</h4>
+    <h3>h3</h3>
+
+
+    <button onclick="changeElement()">Click</button>
+   
+
+    
+</body>
+<script>
+    
+    function changeElement(){
+
+        document.querySelector('#h1tag').innerHTML="Hi Soikat"  
+        document.querySelector('.para').innerHTML="Change Paragraph"           
+        document.querySelector('h4[name="h4"]').innerHTML="Change h4"
+        document.querySelector('h3').innerHTML="change H3" 
+        
+       
+
+    }
+    
+</script>
+</html>
